@@ -25,9 +25,7 @@ class AppRouter extends React.Component {
         <Switch>
           <AuthenticatedRoute path="/oeci" component={OeciLogin} />
           <AuthenticatedRoute path="/record-search" component={RecordSearch} />
-          <AuthenticatedRoute path="/stats" component={InterimPage} />
           <AuthenticatedRoute path="/admin" component={Admin} />
-          <AuthenticatedRoute path="/account" component={InterimPage} />
           <AuthenticatedRoute path="/add-user" component={AddUser} />
           <AuthenticatedRoute path="/edit-user" component={EditUser} />
 
