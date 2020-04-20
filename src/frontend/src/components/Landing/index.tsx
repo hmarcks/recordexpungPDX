@@ -17,7 +17,7 @@ class Landing extends React.Component {
           <div className="overflow-x-hidden relative">
 
             <div className="mw8 center ph4 pb6">
-              <h1 className="f3 f2-ns fw7 mw7 mb4">
+              <h1 className="f3 f2-ns fw9 mw7 mt5 mb4">
                 Technology to make record expungement accessible for everyone
               </h1>
               <p className="lh-copy mw6">

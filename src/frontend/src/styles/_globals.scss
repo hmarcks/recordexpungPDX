@@ -95,6 +95,23 @@ $washed-red: #f0e0e8;
   margin: 1.25rem auto 3rem auto;
 }
 
+// For Manual internal links
+.bb-dotted-2 {
+  border-bottom: 2px dotted #aaa;
+}
+
+// For Manual menu
+.shrink-none {
+  flex-shrink: 0;
+}
+@media screen and (min-width: 60em) {
+  .sticky-l {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  }
+}
+
 .btn--search {
   height: 54px;
 }

@@ -14,25 +14,27 @@ class Header extends React.Component<Props> {
   public render() {
     return (
       !this.props.isAuthenticated ? (
-            <nav className="mw8 center flex justify-between ph3 pb3 mt4 mb5">
-              <div className="logo--landing-page">
-                <Logo />
-              </div>
-              <button
-                onClick={() => history.push('/manual')}
-                className="link mid-gray hover-blue f6 f5-ns dib pa3"
-                >
-                Manual
-              </button>
-              <div>
-                <a href="/login"
-                  className="bg-blue white bg-animate hover-bg-dark-blue f5 fw6 br2 pv2 ph3"
-                >
-                  Log In
-                </a>
-              </div>
+            <div className="bg-white">
+              <nav className="mw8 center flex-ns justify-between ph3 pb4 pt4">
+                <div className="logo--landing-page mb4 mb0-ns">
+                  <a href="/"><Logo /></a>
+                </div>
+                <div>
+                  <a href="/manual"
+                    className="link hover-blue f5 fw6 pv2 ph3 mr4"
+                  >
+                    Manual
+                  </a>
 
-            </nav> ) : (
+                  <a href="/login"
+                    className="bg-blue white bg-animate hover-bg-dark-blue f5 fw6 br2 pv2 ph3"
+                  >
+                    Log In
+                  </a>
+                </div>
+
+              </nav>
+            </div> ) : (
       <nav className="center pt3 ph2 bg-white shadow">
         <div className="mw8 center flex-l justify-between">
             <div className="logo">
